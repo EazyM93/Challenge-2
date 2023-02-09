@@ -5,25 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Montagne Rosse</title>
+    <title>EPIFY - Registrazione</title>
 </head>
-<body>
- <div class="main-section">
-    <div class="image-container"><img src="https://images.pling.com/img/00/00/62/69/92/1719806/minimalist-desktop-211.jpg" alt=""></div>
-    <h1 id="img-title">Paesaggio di Fantasia - Montagne rosse</h1>
-    <h3 id="subtitle">Locazione montuosa di fantasia</h3>
-    <a href="https://www.google.it/"><p id="autore">Autore sconosciuto (Invio a Google)</p></a>
-    <h6 id="luogo-montagna">Luoghi Correlati</h6>
-    <ul id="correlati">
-        <li><a id="mare" href="mare-fantasy.html">Mare fantasy</a></li>
-        <li><a id="colline" href="colline-fantasy.html">Colline fantasy</a></li>
-        <li><a id="foreste" href="foreste-fantasy.html">Foreste fantasy</a></li>
-        <li><a id="deserti" href="deserti-fantasy.html">Deserti fantasy</a></li>
-        <li><a id="tundre" href="tundre-fantasy.html">Tundre fantasy</a></li>
-    </ul>
- </div>
- <footer>
-    <a href="index.html">HOMEPAGE</a>
- </footer>
+
+<style>
+    .formInput{margin-bottom: 15px;}
+</style>
+
+<body style="background-color:  rgb(207, 176, 235);">
+    <h1>REGISTRATI SU EPIFY</h1>
+    
+    <!--from di registrazione-->
+    <form onsubmit="alert('Registrazione Inviata Correttamente')">
+        <div class="formInput">
+            <label for="nome">Nome</label><br>
+            <input type="text" name="nome" id="nome" placeholder="Es. Mario">
+        </div>
+        <div class="formInput">
+            <label for="cognome">Cognome</label><br>
+            <input type="text" name="cognome" id="cognome" placeholder="Es. Rossi">
+        </div>
+        <div class="formInput">
+            <label for="mail">Mail</label><br>
+            <input type="mail" name="mail" id="mail" placeholder="Es. mario.rossi@gmail.com">
+        </div>
+        <div class="formInput">
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password">
+        </div>
+        <div class="formInput">
+            <label for="date">Data di Nascita</label><br>
+            <input type="date" name="data" id="data">
+        </div>
+        <div class="formInput">
+            <label for="tel">Numero telefonico</label><br>
+            <input type="number" name="tel" id="tel">
+        </div>
+        <div class="formInput">
+            <fieldset style="width: fit-content;">
+                <legend>Gusti Musicali</legend>
+                <input type="checkbox" name="pop" id="pop">
+                <label for="pop">Pop</label>
+                <input type="checkbox" name="rock" id="rock">
+                <label for="rock">Rock</label>
+                <br>
+                <input type="checkbox" name="indie" id="indie">
+                <label for="indie">Indie</label>
+                <input type="checkbox" name="jazz" id="jazz">
+                <label for="jazz">Jazz</label>
+                <br>
+                <input type="checkbox" name="altro" id="altro">
+                <label for="altro">Altro</label>
+            </fieldset>
+        </div>
+        <div class="formInput">
+            <input type="radio" id="termini">
+            <label for="termini">Accetto i termini e le codizioni d'uso</label>
+        </div>
+        <button type="submit" style="width: 200px; height: 50px; font-weight: bold;">Invia registrazione</button>
+    </form>
 </body>
 </html>
